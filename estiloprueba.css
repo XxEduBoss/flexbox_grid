@@ -14,6 +14,8 @@ body{
     font-family: sans-serif;
 }
 
+body::-webkit-scrollbar {display: none;}
+
 .header{
     background-color: #FFC244;
     display: flex;
@@ -124,7 +126,7 @@ a {
 
 .categoria-en {
     text-align: center;
-
+    height: 100%;
 }
 
 .img_cat1 {
@@ -280,6 +282,7 @@ a {
 }
 
 .div2 {
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(5,minmax(100px,1fr));
     margin-right: 0;
@@ -299,11 +302,25 @@ a {
 
 
 .foto1 {
+    flex-wrap: wrap;
     grid-row: 1;
     grid-column: 1;
     width: 322px;
     max-width: 100%;
 }
+
+.foto2 {
+    flex-wrap: wrap;
+}
+
+.foto3 {
+    flex-wrap: wrap;
+}
+
+.foto4 {
+    flex-wrap: wrap;
+}
+
 
 .superpone {
     position: relative;
@@ -330,13 +347,10 @@ a {
     align-items: center;
 }
 
-.nombre_foto1 {
-    text-align: center;
-    justify-content: center;
+.nombre_foto {
     margin-top: 20px;
     font-size: medium;
     font-weight: bold;
-    margin-left: -40px;
 }
 
 .superpone_dulces {
@@ -355,4 +369,21 @@ a {
 .like {
     width: 20px;
     margin-right: 5px;
+}
+
+.gratis {
+    width: 20px;
+}
+
+.gratis_yellow {
+    background-color: #ffbc0e;
+    width: 100px;
+    display: flex;
+    font-size: small;
+    font-weight: 400;
+    align-items: center;
+    padding: 2px 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
