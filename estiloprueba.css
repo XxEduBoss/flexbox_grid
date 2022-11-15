@@ -24,6 +24,7 @@ body::-webkit-scrollbar {display: none;}
     height: 100px;
     padding: 5px 10%;
     position: sticky;
+    width: 100%;
 }
 
 .header .logo{
@@ -90,6 +91,7 @@ body::-webkit-scrollbar {display: none;}
     background-color: #F5F5F5;
 }
 
+
 .buscar label {
     border: none;
 }
@@ -155,8 +157,8 @@ a {
 
 .hr1 {
     margin-top: -10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .hr2 {
@@ -174,7 +176,7 @@ a {
 
 .ordenar_por {
     flex: 0 0 194px;
-    margin-left: 150px;
+    margin-left: 10%;
     width: 194px;
     overflow-y: scroll;
     box-sizing: border-box;
@@ -257,7 +259,7 @@ a {
     display: flex;
     align-items: center;
     margin-left: 10px;
-    width: 65%;
+    width: 100%;
 }
 
 .promociones {
@@ -271,6 +273,7 @@ a {
     justify-content: end;
     text-align: end;
     width: 100%;
+    margin-right: 10%;
 }
 
 
@@ -278,9 +281,8 @@ a {
 .div2 {
     flex-wrap: wrap;
     display: flex;
-    margin-right: 0;
+    margin-right: 0px;
     margin-left: 10px;
-    width: 68%;
 }
 
 .fotos_promociones1 {
@@ -398,16 +400,15 @@ a {
     margin-left: 100px;
 }
 
-.tres_primeros {
-    display: flex;
+.wrap {
+    margin-top: 20px;
 }
 
-.dos_ultimos {
-    display: flex;
-}
+@media (max-width: 860px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
 
-@media (max-width: 1863px){
-    .dos_ultimos {
-        margin-top: 30px;
     }
 }
