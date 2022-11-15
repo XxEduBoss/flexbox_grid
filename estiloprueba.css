@@ -257,6 +257,7 @@ a {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    width: 65%;
 }
 
 .promociones {
@@ -265,28 +266,21 @@ a {
     margin-left: 20px;
 }
 
-.div1 a {
-    float: inline-end;
-}
-
-.a_ver_todo {
-    justify-items: end;
-    justify-content:flex-end ;
-    padding-left: 65%;
+.a_ver_todo { 
     color: #18A082;
+    justify-content: end;
+    text-align: end;
+    width: 100%;
 }
 
-.ver_todo {
-    justify-items: end;
-    justify-content:flex-end ;
-}
+
 
 .div2 {
     flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(5,minmax(100px,1fr));
+    display: flex;
     margin-right: 0;
     margin-left: 10px;
+    width: 68%;
 }
 
 .fotos_promociones1 {
@@ -294,6 +288,7 @@ a {
     height: 122px;
     border-radius: 10px;
     transition: all 0.3s;
+    filter: blur(0.6px);
 }
 
 .fotos_promociones1:hover {
@@ -302,23 +297,28 @@ a {
 
 
 .foto1 {
-    flex-wrap: wrap;
-    grid-row: 1;
-    grid-column: 1;
-    width: 322px;
-    max-width: 100%;
+    min-width: 180px;
+    flex-grow: 1;
+    margin-right: 30px;
 }
 
 .foto2 {
-    flex-wrap: wrap;
+    min-width: 180px;
+    margin-right: 30px;
 }
 
 .foto3 {
-    flex-wrap: wrap;
+    min-width: 180px;
+    margin-right: 30px;
 }
 
 .foto4 {
-    flex-wrap: wrap;
+    min-width: 180px;
+    margin-right: 30px;
+}
+
+.foto5 {
+    min-width: 180px;
 }
 
 
@@ -386,4 +386,28 @@ a {
     margin-left: 5px;
     border-radius: 4px;
     box-sizing: border-box;
+}
+.descuento {
+    background-color: #FFC244;
+    padding: 5px 10px;
+    border-radius: 0px 0px 7px 7px;
+    font-size: medium;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 100px;
+}
+
+.tres_primeros {
+    display: flex;
+}
+
+.dos_ultimos {
+    display: flex;
+}
+
+@media (max-width: 1863px){
+    .dos_ultimos {
+        margin-top: 30px;
+    }
 }
